@@ -1,0 +1,6 @@
+category: Audio Libs
+requires: cygwin libFLAC7
+external-source: libsndfile
+sdesc: "Sampled audio data library (runtime)"
+ldesc: "libsndfile is a library of C routines for reading and writing
+files containing sampled audio data."
