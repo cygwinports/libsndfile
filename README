@@ -4,23 +4,23 @@ libsndfile is a library of C routines for reading and writing
 files containing sampled audio data.
 
 Runtime requirements:
-  cygwin-1.5.19-4
+  cygwin-1.5.21-2
   libFLAC7-1.1.2-1
-  sqlite3-3.3.5-1
+  libsqlite3_0-3.3.7-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
+  cygwin-1.5.21-2
+  autoconf2.5-2.59-2
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.1.93-1
+  binutils-20060709-1
+  cygport-0.2.5-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
   libtool1.5-1.5.22-1
-  make-3.80-1
+  make-3.81-1
   pkg-config-0.20-1
-  sed-4.1.4-1
+  sed-4.1.5-1
 
 Canonical homepage:
   http://www.mega-nerd.com/libsndfile/
@@ -97,6 +97,9 @@ Files included in the doc package:
 ------------------
 
 Port Notes:
+
+----- version 1.0.17-1 -----
+Version bump.
 
 ----- version 1.0.16-1 -----
 Version bump.
