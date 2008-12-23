@@ -1,4 +1,4 @@
-category: Audio Libs
+category: Audio
 requires: cygwin libFLAC8
 external-source: libsndfile
 sdesc: "Sampled audio data library (runtime)"
