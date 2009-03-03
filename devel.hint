@@ -1,5 +1,5 @@
 category: Audio
-requires: cygwin libsndfile1 libFLAC-devel
+requires: cygwin libsndfile1 libFLAC-devel libogg-devel libvorbis-devel
 external-source: libsndfile
 sdesc: "Sampled audio data library (development)"
 ldesc: "libsndfile is a library of C routines for reading and writing

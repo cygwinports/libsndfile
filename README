@@ -4,22 +4,25 @@ libsndfile is a library of C routines for reading and writing
 files containing sampled audio data.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  libFLAC8-1.2.1-1
-  libsqlite3_0-3.3.17-1
+  cygwin-1.5.25-15
+  libFLAC8-1.2.1-2
+  libjack0-0.116.2-1
+  libogg0-1.1.3-1
+  libsqlite3_0-3.6.10-1
+  libvorbis0-1.2.0-2
+  libvorbisenc2-1.2.0-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.5-1
-  gawk-3.1.5-4
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
-  make-3.81-1
-  pkg-config-0.21-1
+  libtool-2.2.6a-1
+  make-3.81-2
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical homepage:
@@ -28,62 +31,64 @@ Canonical homepage:
 -------------------------------------------
 
 Build instructions:
-  unpack libsndfile-1.0.17-X-src.tar.bz2
+  unpack libsndfile-1.0.19-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libsndfile-1.0.17-X.cygport all
+  cygport ./libsndfile-1.0.19-X.cygport all
 
 This will create:
-  /usr/src/libsndfile-1.0.17-X-src.tar.bz2
-  /usr/src/libsndfile-1.0.17-X.tar.bz2
-  /usr/src/libsndfile-devel-1.0.17-X.tar.bz2
-  /usr/src/libsndfile1-1.0.17-X.tar.bz2
+  /usr/src/libsndfile-1.0.19-X-src.tar.bz2
+  /usr/src/libsndfile-1.0.19-X.tar.bz2
+  /usr/src/libsndfile-devel-1.0.19-X.tar.bz2
+  /usr/src/libsndfile1-1.0.19-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
 (libsndfile)
+  /usr/bin/sndfile-cmp.exe
   /usr/bin/sndfile-convert.exe
   /usr/bin/sndfile-info.exe
+  /usr/bin/sndfile-jackplay.exe
+  /usr/bin/sndfile-metadata-get.exe
+  /usr/bin/sndfile-metadata-set.exe
   /usr/bin/sndfile-play.exe
   /usr/bin/sndfile-regtest.exe
-  /usr/share/doc/Cygwin/libsndfile-1.0.17.README
-  /usr/share/doc/libsndfile-1.0.17/AUTHORS
-  /usr/share/doc/libsndfile-1.0.17/ChangeLog
-  /usr/share/doc/libsndfile-1.0.17/COPYING
-  /usr/share/doc/libsndfile-1.0.17/INSTALL
-  /usr/share/doc/libsndfile-1.0.17/NEWS
-  /usr/share/doc/libsndfile-1.0.17/README
-  /usr/share/doc/libsndfile-1.0.17/TODO
-  /usr/share/doc/libsndfile-1.0.17/html/FAQ.html
-  /usr/share/doc/libsndfile-1.0.17/html/api.html
-  /usr/share/doc/libsndfile-1.0.17/html/bugs.html
-  /usr/share/doc/libsndfile-1.0.17/html/command.html
-  /usr/share/doc/libsndfile-1.0.17/html/dither.html
-  /usr/share/doc/libsndfile-1.0.17/html/embedded_files.html
-  /usr/share/doc/libsndfile-1.0.17/html/index.html
-  /usr/share/doc/libsndfile-1.0.17/html/libsndfile.css
-  /usr/share/doc/libsndfile-1.0.17/html/libsndfile.jpg
-  /usr/share/doc/libsndfile-1.0.17/html/lists.html
-  /usr/share/doc/libsndfile-1.0.17/html/new_file_type.HOWTO
-  /usr/share/doc/libsndfile-1.0.17/html/octave.html
-  /usr/share/doc/libsndfile-1.0.17/html/pkgconfig.html
-  /usr/share/doc/libsndfile-1.0.17/html/sndfile_info.html
-  /usr/share/doc/libsndfile-1.0.17/html/win32.html
+  /usr/share/doc/libsndfile-1.0.19/AUTHORS
+  /usr/share/doc/libsndfile-1.0.19/COPYING
+  /usr/share/doc/libsndfile-1.0.19/ChangeLog
+  /usr/share/doc/libsndfile-1.0.19/INSTALL
+  /usr/share/doc/libsndfile-1.0.19/NEWS
+  /usr/share/doc/libsndfile-1.0.19/README
+  /usr/share/doc/libsndfile-1.0.19/TODO
+  /usr/share/doc/libsndfile-1.0.19/html/FAQ.html
+  /usr/share/doc/libsndfile-1.0.19/html/api.html
+  /usr/share/doc/libsndfile-1.0.19/html/bugs.html
+  /usr/share/doc/libsndfile-1.0.19/html/command.html
+  /usr/share/doc/libsndfile-1.0.19/html/dither.html
+  /usr/share/doc/libsndfile-1.0.19/html/embedded_files.html
+  /usr/share/doc/libsndfile-1.0.19/html/index.html
+  /usr/share/doc/libsndfile-1.0.19/html/libsndfile.css
+  /usr/share/doc/libsndfile-1.0.19/html/libsndfile.jpg
+  /usr/share/doc/libsndfile-1.0.19/html/lists.html
+  /usr/share/doc/libsndfile-1.0.19/html/new_file_type.HOWTO
+  /usr/share/doc/libsndfile-1.0.19/html/octave.html
+  /usr/share/doc/libsndfile-1.0.19/html/pkgconfig.html
+  /usr/share/doc/libsndfile-1.0.19/html/sndfile_info.html
+  /usr/share/doc/libsndfile-1.0.19/html/tutorial.html
+  /usr/share/doc/libsndfile-1.0.19/html/win32.html
   /usr/share/man/man1/sndfile-convert.1.gz
   /usr/share/man/man1/sndfile-info.1.gz
   /usr/share/man/man1/sndfile-play.1.gz
-  /usr/share/octave/site/m/sndfile_load.m
-  /usr/share/octave/site/m/sndfile_play.m
-  /usr/share/octave/site/m/sndfile_save.m
 
 (libsndfile1)
   /usr/bin/cygsndfile-1.dll
 
 (libsndfile-devel)
   /usr/include/sndfile.h
+  /usr/include/sndfile.hh
   /usr/lib/libsndfile.a
   /usr/lib/libsndfile.dll.a
   /usr/lib/libsndfile.la
@@ -92,6 +97,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.0.19-1 -----
+yVersion bump.
 
 ----- version 1.0.17-2 -----
 Rebuilt with Gentoo patches for new FLAC API and CVE-2007-4974.
