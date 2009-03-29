@@ -4,23 +4,23 @@ libsndfile is a library of C routines for reading and writing
 files containing sampled audio data.
 
 Runtime requirements:
-  cygwin-1.5.25-15
+  cygwin-1.7.0-44
   libFLAC8-1.2.1-2
-  libjack0-0.116.2-1
+  libgcc1-4.3.2-2
   libogg0-1.1.3-1
-  libsqlite3_0-3.6.10-1
+  libsqlite3_0-3.6.11-1
   libvorbis0-1.2.0-2
   libvorbisenc2-1.2.0-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  libtool-2.2.6a-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.6a-2
   make-3.81-2
   pkg-config-0.23a-2
   sed-4.1.5-2
@@ -56,29 +56,28 @@ Files included in the binary packages:
   /usr/bin/sndfile-metadata-set.exe
   /usr/bin/sndfile-play.exe
   /usr/bin/sndfile-regtest.exe
-  /usr/share/doc/libsndfile-1.0.19/AUTHORS
-  /usr/share/doc/libsndfile-1.0.19/COPYING
-  /usr/share/doc/libsndfile-1.0.19/ChangeLog
-  /usr/share/doc/libsndfile-1.0.19/INSTALL
-  /usr/share/doc/libsndfile-1.0.19/NEWS
-  /usr/share/doc/libsndfile-1.0.19/README
-  /usr/share/doc/libsndfile-1.0.19/TODO
-  /usr/share/doc/libsndfile-1.0.19/html/FAQ.html
-  /usr/share/doc/libsndfile-1.0.19/html/api.html
-  /usr/share/doc/libsndfile-1.0.19/html/bugs.html
-  /usr/share/doc/libsndfile-1.0.19/html/command.html
-  /usr/share/doc/libsndfile-1.0.19/html/dither.html
-  /usr/share/doc/libsndfile-1.0.19/html/embedded_files.html
-  /usr/share/doc/libsndfile-1.0.19/html/index.html
-  /usr/share/doc/libsndfile-1.0.19/html/libsndfile.css
-  /usr/share/doc/libsndfile-1.0.19/html/libsndfile.jpg
-  /usr/share/doc/libsndfile-1.0.19/html/lists.html
-  /usr/share/doc/libsndfile-1.0.19/html/new_file_type.HOWTO
-  /usr/share/doc/libsndfile-1.0.19/html/octave.html
-  /usr/share/doc/libsndfile-1.0.19/html/pkgconfig.html
-  /usr/share/doc/libsndfile-1.0.19/html/sndfile_info.html
-  /usr/share/doc/libsndfile-1.0.19/html/tutorial.html
-  /usr/share/doc/libsndfile-1.0.19/html/win32.html
+  /usr/share/doc/libsndfile/AUTHORS
+  /usr/share/doc/libsndfile/COPYING
+  /usr/share/doc/libsndfile/ChangeLog
+  /usr/share/doc/libsndfile/NEWS
+  /usr/share/doc/libsndfile/README
+  /usr/share/doc/libsndfile/TODO
+  /usr/share/doc/libsndfile/html/FAQ.html
+  /usr/share/doc/libsndfile/html/api.html
+  /usr/share/doc/libsndfile/html/bugs.html
+  /usr/share/doc/libsndfile/html/command.html
+  /usr/share/doc/libsndfile/html/dither.html
+  /usr/share/doc/libsndfile/html/embedded_files.html
+  /usr/share/doc/libsndfile/html/index.html
+  /usr/share/doc/libsndfile/html/libsndfile.css
+  /usr/share/doc/libsndfile/html/libsndfile.jpg
+  /usr/share/doc/libsndfile/html/lists.html
+  /usr/share/doc/libsndfile/html/new_file_type.HOWTO
+  /usr/share/doc/libsndfile/html/octave.html
+  /usr/share/doc/libsndfile/html/pkgconfig.html
+  /usr/share/doc/libsndfile/html/sndfile_info.html
+  /usr/share/doc/libsndfile/html/tutorial.html
+  /usr/share/doc/libsndfile/html/win32.html
   /usr/share/man/man1/sndfile-convert.1.gz
   /usr/share/man/man1/sndfile-info.1.gz
   /usr/share/man/man1/sndfile-play.1.gz
@@ -98,28 +97,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 1.0.19-1 -----
-yVersion bump.
-
------ version 1.0.17-2 -----
-Rebuilt with Gentoo patches for new FLAC API and CVE-2007-4974.
-
------ version 1.0.17-1 -----
-Version bump.
-
------ version 1.0.16-1 -----
-Version bump.
-
------ version 1.0.13-1 -----
-Version bump with new dependencies on libFLAC7 and sqlite3.
-Created separate -devel and -doc packages.
-
------ version 1.0.12-1 -----
-Version bump.
-Runtime library is now provided in a separate package.
-
------ version 1.0.11-1 -----
-Initial release for Cygwin.
+----- version 1.0.19-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

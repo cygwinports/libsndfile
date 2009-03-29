@@ -22,4 +22,4 @@ CYGCONF_ARGS="
 	--disable-gcc-werror
 	ac_cv_prog_HAVE_AUTOGEN=no
 "
-MAKEOPTS+=" htmldocdir=/usr/share/doc/${P}/html"
+MAKEOPTS+=" htmldocdir=/usr/share/doc/${PN}/html"
