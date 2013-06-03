@@ -1,6 +1,0 @@
-category: Audio
-requires: libFLAC8 libgcc1 libogg0 libvorbis0 libvorbisenc2
-external-source: libsndfile
-sdesc: "Sampled audio data library (runtime)"
-ldesc: "libsndfile is a library of C routines for reading and writing
-files containing sampled audio data."

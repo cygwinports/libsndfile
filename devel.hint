@@ -1,6 +1,0 @@
-category: Audio
-requires: libsndfile1 flac-devel libogg-devel libvorbis-devel
-external-source: libsndfile
-sdesc: "Sampled audio data library (development)"
-ldesc: "libsndfile is a library of C routines for reading and writing
-files containing sampled audio data."
