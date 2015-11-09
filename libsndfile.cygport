@@ -1,7 +1,7 @@
 NAME="libsndfile"
 VERSION=1.0.25
-RELEASE=2
-CATEGORY="Audio"
+RELEASE=3
+CATEGORY="Libs"
 SUMMARY="Sampled audio data library"
 DESCRIPTION="libsndfile is a library of C routines for reading and writing
 files containing sampled audio data."
@@ -11,17 +11,22 @@ PATCH_URI="
 	http://pkgs.fedoraproject.org/cgit/libsndfile.git/plain/libsndfile-1.0.25-system-gsm.patch
 	http://pkgs.fedoraproject.org/cgit/libsndfile.git/plain/libsndfile-1.0.25-zerodivfix.patch
 	http://pkgs.fedoraproject.org/cgit/libsndfile.git/plain/libsndfile-1.0.25-cve2014_9496.patch
+	http://pkgs.fedoraproject.org/cgit/libsndfile.git/plain/libsndfile-1.0.25-d2a87385c1ca1d72918e9a2875d24f202a5093e8.patch
 	1.0.23-oss.patch
 	1.0.19-vpath.patch
+	1.0.25-no-undefined.patch
 "
 
 DISTCLEANFILES="src/GSM610/*"
 
-PKG_NAMES="${NAME} ${NAME}1 ${NAME}-devel"
-libsndfile_SUMMARY="${SUMMARY% *} utilities"
-libsndfile_CONTENTS='usr/bin/*.exe usr/share/'
-libsndfile1_CONTENTS='usr/bin/*-1.dll'
+PKG_NAMES="${NAME} ${NAME}1 ${NAME}-devel ${NAME}-utils"
+libsndfile_CATEGORY="_obsolete"
+libsndfile_REQUIRES="${NAME}-utils"
+libsndfile1_CONTENTS='usr/bin/*-1.dll usr/share/doc/'
 libsndfile_devel_CONTENTS='usr/include/ usr/lib/'
+libsndfile_utils_CATEGORY="Audio"
+libsndfile_utils_SUMMARY="${SUMMARY% *} utilities"
+libsndfile_utils_CONTENTS='usr/bin/*.exe usr/share/man/man1/'
 
 ACLOCAL_FLAGS="-I M4"
 CYGCONF_ARGS="
