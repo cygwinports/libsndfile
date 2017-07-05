@@ -1,11 +1,11 @@
 --- origsrc/libsndfile-1.0.23/programs/sndfile-play.c	2010-03-16 09:38:38.000000000 -0500
 +++ src/libsndfile-1.0.23/programs/sndfile-play.c	2010-11-02 09:05:52.876156000 -0500
 @@ -48,7 +48,7 @@
- 	#include <sys/time.h>
- #endif
  
--#if defined (__linux__) || defined (__FreeBSD_kernel__) || defined (__FreeBSD__)
-+#if defined (__linux__) || defined (__FreeBSD_kernel__) || defined (__FreeBSD__) || defined (__CYGWIN__)
+ #if defined (__ANDROID__)
+ 
+-#elif defined (__linux__) || defined (__FreeBSD_kernel__) || defined (__FreeBSD__)
++#elif defined (__linux__) || defined (__FreeBSD_kernel__) || defined (__FreeBSD__) || defined (__CYGWIN__)
  	#include 	<fcntl.h>
  	#include 	<sys/ioctl.h>
  	#include 	<sys/soundcard.h>
@@ -13,8 +13,8 @@
  **	Linux/OSS functions for playing a sound.
  */
  
--#if defined (__linux__) || defined (__FreeBSD_kernel__) || defined (__FreeBSD__)
-+#if defined (__linux__) || defined (__FreeBSD_kernel__) || defined (__FreeBSD__) || defined (__CYGWIN__)
+-#if !defined (__ANDROID__) && (defined (__linux__) || defined (__FreeBSD_kernel__) || defined (__FreeBSD__))
++#if !defined (__ANDROID__) && (defined (__linux__) || defined (__FreeBSD_kernel__) || defined (__FreeBSD__) || defined (__CYGWIN__))
  
  static	int	opensoundsys_open_device (int channels, int srate) ;
  
